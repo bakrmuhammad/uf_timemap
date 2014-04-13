@@ -30,12 +30,29 @@ function timeLine(){
     $('.timeline').change(function(){
         var currentTime = $('.timeline option:selected').val();
         
+        //alert(currentTime);
+        
+        switch (currentTime){
+            case 1( currentTime === 'time1'):
+                $('a.one').show(0);
+                $('a.three a.two').hide(0);
+                break;
+            case 2( currentTime === 'time2'):
+                $('a.two').show(0);
+                $('a.three a.one').hide(0);
+                break;
+            case 3( currentTime === 'time3'):
+                $('a.three').show(0);
+                $('a.one a.two').hide(0);
+                break; //switch attempt
+        };
+        /*
         if ( currentTime == 'time1'  ){
             //$(' a.dot[time="timeone"]').show(1000);
         }else{
             $('a.dot[time="'+currentTime+'"]').show(0);
             $('a.dot[time!="'+currentTime+'"]').hide(0);
-        };
+        };*/
         
     });
     /*
