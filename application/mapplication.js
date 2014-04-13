@@ -32,27 +32,26 @@ function timeLine(){
         
         //alert(currentTime);
         
-        switch (currentTime){
-            case 1( currentTime === 'time1'):
-                $('a.one').show(0);
-                $('a.three a.two').hide(0);
-                break;
-            case 2( currentTime === 'time2'):
-                $('a.two').show(0);
-                $('a.three a.one').hide(0);
-                break;
-            case 3( currentTime === 'time3'):
-                $('a.three').show(0);
-                $('a.one a.two').hide(0);
-                break; //switch attempt
-        };
-        /*
+        /*if (currentTime === 'time1') {
+            $('a.dot[time="time1"]').show(0);
+            $('a.three a.two').hide(0);
+        } else if( currentTime === 'time2') {
+            $('a.dot[time="time2"]').show(0);
+            $('a.three a.one').hide(0);
+        } else if ( currentTime === 'time3') {
+            $('a.dot[time="time3"]').show(0);
+            $('a.one a.two').hide(0);
+        } else{
+            $('a.dot[time="time2"]').show(0);
+            $('a.three a.two').hide(0);
+        };*/
+        
         if ( currentTime == 'time1'  ){
             //$(' a.dot[time="timeone"]').show(1000);
         }else{
             $('a.dot[time="'+currentTime+'"]').show(0);
             $('a.dot[time!="'+currentTime+'"]').hide(0);
-        };*/
+        };
         
     });
     /*
@@ -70,18 +69,19 @@ function timeLine(){
 function sideBar(){
     $('a.dot').on('click', function(){
         
-        // alert( $(this).attr('location') );
+        //alert( $(this).attr('location') );
         // audio html5 plugin
 
 		$('a.dot').removeClass('selected');
 		$(this).addClass('selected');
         
-        var selected = $('a.dot.selected').attr('location');
-		var location = '.sidebar .location' + $(this).attr('location');
+        //var selected = $('a.dot.selected').attr('location');
+		var location = '.location#' + $(this).attr('location');
 		var htmlCode = $(location).html();
+        //alert (htmlCode);
 
-        $('.sidebar').fadeOut(500, function(){
-			$(this).show(htmlCode);
+        $('.sidebar .location_detail').fadeOut(500, function(){
+			$('.sidebar .location_detail').prepend(htmlCode);
 			$(this).fadeIn(500);
 		});
 
