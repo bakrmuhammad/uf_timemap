@@ -1,0 +1,65 @@
+body{
+	font-family: Helvetica, sans;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+#map_container{
+	background: url(../images/uf_map.png) no-repeat 0px 0px;
+	height: 535px;
+	width: 997px;
+	position: relative;
+	margin: 0px 0px 0px 0px;
+}
+
+#map_container a.dot {
+	background: url(../images/test_dots.png) no-repeat 0px 0px;
+	height: 40px;
+	width: 40px;
+	display: block;
+	cursor: pointer;
+    position: absolute;
+}
+
+#map_container a.dot:hover{
+	background-position: 0px -44px;
+}
+
+#map_container .two{
+    display: hidden;
+}
+
+span{
+    font-size: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+span:hover{
+	color: red; 
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 997px;
+    display: none;
+}
+
+span .selected{
+    color: blue;
+}
+
+.timeline form{
+    width: 500px;
+}
+
+a.dot.selected {
+    opacity: 0.5;
+}
+
+/*.sidebar{
+    height: 180px;
+    overflow: hidden;
+}
+*/

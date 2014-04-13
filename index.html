@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic HTML and CSS Templates</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/base.css">
+	<script src="application/jquery.min.js"></script>
+	<script src="application/mapplication.js"></script>
+	
+</head>
+	<body>
+	
+				<header>
+					<h1> UF in a Day</h1>
+					<!--Once intergrated into portfolio site, nav bar will be added-->
+				</header>
+		
+		
+		<div id = "window"> 
+			
+            <!--Map-->
+            <div id = "map_container">
+						<!--buttons Lake Alice-->
+				<a class = "dot" style = "top: 265px; left: 300px;"  time = "time1" location= "lake_alice1"> 1 </a> 
+                <a class = "dot" style = "top: 265px; left: 260px;"  time = "time2" location= "lake_alice2"> 2 </a> 
+                <a class = "dot" style = "top: 265px; left: 220px;"  time = "time3" location= "lake_alice3"> 3 </a> 
+
+                        <!--Century Tower-->
+				<a class = "dot two" style = "top: 100px; left: 800px;" location= "century1" time = "time1"> 1</a> 
+                <a class = "dot two" style = "top: 140px; left: 800px;" location= "century2" time = "time2"> 2 </a> 
+                <a class = "dot two" style = "top: 60px; left: 800px;" location= "century3" time = "time3"> 3 </a> 
+                
+                        <!--O'Connell Center-->
+                <a class = "dot two" style = "top: 40px; left: 620px;" location= "oconnel1" time = "time1"> 1 </a> 
+				<a class = "dot two" style = "top: 120px; left: 620px;" location= "oconnel2" time = "time2"> 2 </a> 
+				<a class = "dot two" style = "top: 80px; left: 620px;" location= "oconnel3" time = "time3"> 3 </a> 
+
+            </div> <!--end .map_container-->
+
+                <!--Timeline-->
+                <div class = "timeline">
+                    <form id="timeline" name="timeLine" class="time_line" method="post" action="">
+                        <select name = "time" id = "time">
+                            <option value = "time1">Time 1</option>
+                            <option value = "time2">Time 2</option>
+                            <option value = "time3">Time 3</option>
+                        </select>
+                    </form>
+                </div>
+
+            <!--Sidebar -->
+            <div class = "sidebar">
+					
+					<!-- Location 1a -->
+					<div class="location" id="oconnel1">
+						<img class="object_photo" src="images/test_pic.png" alt="O' Connell" width="50" height="50" />
+						<div class="info">
+							<h2>O' Connell1</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 1b -->
+					<div class="location" id="oconnel2">
+						<img class="object_photo" src="images/test_pic.png" alt="O' Connell" width="50" height="50" />
+						<div class="info">
+							<h2>O' Connell2</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 1c -->
+					<div class="location" id="oconnel3">
+						<img class="object_photo" src="images/test_pic.png" alt="O' Connell" width="50" height="50" />
+						<div class="info">
+							<h2>O' Connell3</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 2a -->
+					<div class="location" id="century1">
+						<img class="object_photo" src="images/test_pic.png" alt="Century Tower" width="50" height="50" />
+						<div class="info">
+							<h2>Century Tower1</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+				
+					<!-- Location 2b -->
+					<div class="location" id="century2">
+						<img class="object_photo" src="images/test_pic.png" alt="Century Tower" width="50" height="50" />
+						<div class="info">
+							<h2>Century Tower2</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 2c -->
+					<div class="location" id="century3">
+						<img class="object_photo" src="images/test_pic.png" alt="Century Tower" width="50" height="50" />
+						<div class="info">
+							<h2>Century Tower3</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 3a -->
+					<div class="location" id="lake_alice1">
+						<img class="object_photo" src="images/test_pic.png" alt="Lake Alice" width="50" height="50" />
+						<div class="info">
+							<h2>Lake Alice1</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 3b -->
+					<div class="location" id="lake_alice2">
+						<img class="object_photo" src="images/test_pic.png" alt="Lake Alice" width="50" height="50" />
+						<div class="info">
+							<h2>Lake Alice2</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+					
+					<!-- Location 3c -->
+					<div class="location" id="lake_alice3">
+						<img class="object_photo" src="images/test_pic.png" alt="Lake Alice" width="50" height="50" />
+						<div class="info">
+							<h2>Lake Alice3</h2>
+								<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+						</div>
+					</div>
+				
+				
+				</div> <!--end sidebar-->
+			</div> <!--end window-->
+	<footer></footer>	
+	</body>
+</html>
