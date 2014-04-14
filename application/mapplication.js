@@ -61,7 +61,8 @@ function timeLine(){
         $('#map_container a.dot').slideDown(1000)
     }else{
         $('#map_container a.dot').slideUp(0)
-    }; */
+    }; 
+    */
 };
 
 
@@ -79,9 +80,9 @@ function sideBar(){
 		var location = '.location#' + $(this).attr('location');
 		var htmlCode = $(location).html();
         //alert (htmlCode);
-
+        //function adds indfo on click. FINALLY WORKS
         $('.sidebar .location_detail').fadeOut(500, function(){
-			$('.sidebar .location_detail').prepend(htmlCode);
+            $(this).html(htmlCode);
 			$(this).fadeIn(500);
 		});
 
