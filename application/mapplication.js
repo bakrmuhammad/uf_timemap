@@ -20,67 +20,49 @@
 
 
 $(document).ready(function(){
-	timeLine();
+    timeLine();
 	sideBar();
 });
 
 //switches button sets to correlate w/timestamps
 function timeLine(){
-    //REWORK WITH switch() 
-    $('.timeline').change(function(){
-        var currentTime = $('.timeline option:selected').val();
+
+    $('a.time').on('click', function() {
+	
+        //$('a.times').removeClass('selected2');
+		//$(this).addClass('selected2');
         
-        //alert(currentTime);
+		var time ='.dot#' + $(this).attr('time');
+        var htmlDots = $(time).html();
+        //alert(htmlDots);
+        //alert(time);
         
-        /*if (currentTime === 'time1') {
-            $('a.dot[time="time1"]').show(0);
-            $('a.three a.two').hide(0);
-        } else if( currentTime === 'time2') {
-            $('a.dot[time="time2"]').show(0);
-            $('a.three a.one').hide(0);
-        } else if ( currentTime === 'time3') {
-            $('a.dot[time="time3"]').show(0);
-            $('a.one a.two').hide(0);
-        } else{
-            $('a.dot[time="time2"]').show(0);
-            $('a.three a.two').hide(0);
-        };*/
-        
-        if ( currentTime == 'time1'  ){
-            //$(' a.dot[time="timeone"]').show(1000);
-        }else{
-            $('a.dot[time="'+currentTime+'"]').show(0);
-            $('a.dot[time!="'+currentTime+'"]').hide(0);
-        };
-        
-    });
-    /*
-    var currentTime = $('.timeline span .selected').class();
-        
-    if( $('#map_container a.dot').attr('time') == currentTime{
-        $('#map_container a.dot').slideDown(1000)
-    }else{
-        $('#map_container a.dot').slideUp(0)
-    }; 
-    */
+       $('#map_container .start').fadeOut(1000, function(){
+            $(this).html(htmlDots);
+			$(this).fadeIn(500);
+        });	
+	});  
 };
 
 
-
-function sideBar(){
-    $('a.dot').on('click', function(){
+function sideBar(){    
+    
+    $('a.start').on('click', function(){
         
         //alert( $(this).attr('location') );
-        // audio html5 plugin
 
-		$('a.dot').removeClass('selected');
+		$('a.start').removeClass('selected');
 		$(this).addClass('selected');
         
         //var selected = $('a.dot.selected').attr('location');
 		var location = '.location#' + $(this).attr('location');
 		var htmlCode = $(location).html();
+        
+        //debugging
+        //alert(location);
         //alert (htmlCode);
-        //function adds indfo on click. FINALLY WORKS
+        
+        //function adds info on click. FINALLY WORKS 
         $('.sidebar .location_detail').fadeOut(500, function(){
             $(this).html(htmlCode);
 			$(this).fadeIn(500);
@@ -89,10 +71,3 @@ function sideBar(){
 	});
 	
 };
-
-/*hover on buttons (tooltip?)
-function buttonTip(){
-	
-};
-
-*/
