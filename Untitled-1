@@ -1,0 +1,44 @@
+        
+        /*if( time === 'time1' ){
+           // alert('hi1');
+            $('#map_container a.dot.one').fadeIn(0); 
+            $('#map_container a.dot.two.thee').fadeOut(0);
+        }else if(time === 'time2' ){
+            //alert('hi2');
+            $('#map_container a.dot.two').fadeIn(0);
+            $('#map_container a.dot.one.three').fadeOut(0);
+        }else if( time === 'time3'){
+            //alert('hi3');
+            $('#map_container a.dot.three').fadeIn(0);
+            $('#map_container a.dot.one.two').fadeOut(0);
+        };
+        
+		/*if (selectedContinent == 'ALL'){
+			$('a.dot').slideDown(1000);
+		}else{
+			$('a.dot[continent = "'+selectedContinent+'"]').slideDown(1000);
+			$('a.dot[continent != "'+selectedContinent+'"]').slideUp(1000);
+		}*/
+         /*
+    var currentTime = $('.timeline span .selected').class();
+        
+    if( $('#map_container a.dot').attr('time') == currentTime{
+        $('#map_container a.dot').slideDown(1000)
+    }else{
+        $('#map_container a.dot').slideUp(0)
+    }; 
+    */
+    
+    
+<a class = "dot one" style = "top: 265px; left: 300px;"  time = "time1" location= "lake_alice1">1</a> 
+<a class = "dot two" style = "top: 265px; left: 300px;"  time = "time2" location= "lake_alice2">2</a> 
+ <!--Century Tower-->
+				<a class = "dot one" style = "top: 100px; left: 800px;" location= "century1" id = "time1">1</a> 
+                <a class = "dot two" style = "top: 100px; left: 800px;" location= "century2" id = "time2">2</a> 
+                <a class = "dot three" style = "top: 100px; left: 800px;" location= "century3" id = "time3">3</a> 
+                
+                        <!--O'Connell Center-->
+                <a class = "dot one" style = "top: 40px; left: 620px;" location= "oconnel1" id = "time1">1</a> 
+				<a class = "dot two" style = "top: 40px; left: 620px;" location= "oconnel2" id = "time2">2</a> 
+				<a class = "dot three" style = "top: 40px; left: 620px;" location= "oconnel3" id = "time3">3</a> 
+<a class = "dot three" style = "top: 265px; left: 300px;;"  time = "time3" location= "lake_alice3">3</a> 

@@ -32,9 +32,9 @@ function timeLine(){
         //$('a.times').removeClass('selected2');
 		//$(this).addClass('selected2');
         
-		var time ='.dot#' + $(this).attr('time');
+		var time ='.dots#' + $(this).attr('time') ;
         var htmlDots = $(time).html();
-        //alert(htmlDots);
+        alert(htmlDots);
         //alert(time);
         
        $('#map_container .start').fadeOut(1000, function(){
@@ -47,11 +47,12 @@ function timeLine(){
 
 function sideBar(){    
     
-    $('a.start').on('click', function(){
+    
+    $('.start').on('click', function(){
         
         //alert( $(this).attr('location') );
 
-		$('a.start').removeClass('selected');
+		$('.start').removeClass('selected');
 		$(this).addClass('selected');
         
         //var selected = $('a.dot.selected').attr('location');

@@ -23,26 +23,34 @@
             <!--Map-->
             <div id = "map_container">
                 
-                <a class = "start" style = "top: 265px; left: 300px;" location= "lake_alice1" time = "start">1</a>
-                <a class = "start" style = "top: 100px; left: 800px;" location= "century1" time = "start">1</a>
-                <a class = "start" style = "top: 40px; left: 620px;" location= "oconnel1" time = "start">1</a> 
+                <!--start-->
+                <div  class = "start">
+                    <a class = "start" style = "top: 265px; left: 300px;" location= "lake_alice1">1</a>
+                    <a class = "start" style = "top: 100px; left: 800px;" location= "century1">1</a>
+                    <a class = "start" style = "top: 40px; left: 620px;" location= "oconnel1">1</a>  
+                </div>
 
-						<!--buttons Lake Alice-->
-                <a class = "dot one" style = "top: 265px; left: 300px;" location= "lake_alice1" time = "time1">1</a>
-                <a class = "dot two" style = "top: 265px; left: 300px;" location= "lake_alice2" time = "time2">1</a>
-                <a class = "dot three" style = "top: 265px; left: 300px;" location= "lake_alice3" time = "time3">1</a>
-                    
-
-                        <!--Century Tower-->
-				<a class = "dot one" style = "top: 100px; left: 800px;" location= "century1" id = "time1">1</a> 
-                <a class = "dot two" style = "top: 100px; left: 800px;" location= "century2" id = "time2">2</a> 
-                <a class = "dot three" style = "top: 100px; left: 800px;" location= "century3" id = "time3">3</a> 
+                <!--Time1-->              
+                <div class="dots" id = "time1">
+                    <a class="dot" style = "top: 265px; left: 300px;" location= "lake_alice1">1</a>
+                    <a class="dot" style = "top: 100px; left: 800px;" location= "century1">1</a>
+                    <a class="dot" style = "top: 40px; left: 620px;" location= "oconnel1">1</a>
+                </div>
                 
-                        <!--O'Connell Center-->
-                <a class = "dot one" style = "top: 40px; left: 620px;" location= "oconnel1" id = "time1">1</a> 
-				<a class = "dot two" style = "top: 40px; left: 620px;" location= "oconnel2" id = "time2">2</a> 
-				<a class = "dot three" style = "top: 40px; left: 620px;" location= "oconnel3" id = "time3">3</a> 
-
+                <!--Time2-->
+                <div class = "dots" id = "time2">
+                    <a class="dot" style = "top: 265px; left: 300px;" location= "lake_alice2">2</a>
+                    <a class="dot" style = "top: 100px; left: 800px;" location= "century2">2</a> 
+                    <a class="dot" style = "top: 40px; left: 620px;" location= "oconnel2">2</a> 
+                </div>
+                
+                <!--Time3-->
+                <div class = "dots" id ="time3">
+                    <a class="dot" style = "top: 265px; left: 300px;" location= "lake_alice3">3</a>
+                    <a class="dot" style = "top: 100px; left: 800px;" location= "century3">3</a> 
+                    <a  class="dot" style = "top: 40px; left: 620px;" location= "oconnel3">3</a>
+                </div> 
+                
             </div> <!--end #map_container-->
 
                 <!--Timeline-->

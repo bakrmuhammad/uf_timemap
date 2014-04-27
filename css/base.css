@@ -20,7 +20,7 @@ body{
     position: absolute;
 }
 
-#map_container a.dot {
+#map_container .dot {
 	background: url(../images/test_dots.png) no-repeat 0px 0px;
 	height: 40px;
 	width: 40px;
@@ -29,7 +29,11 @@ body{
     position: absolute;
 }
 
-#map_container a.dot:hover{
+#map_container a.start:hover{
+	background-position: 0px -44px;
+}
+
+#map_container .dot:hover{
 	background-position: 0px -44px;
 }
 
@@ -45,7 +49,6 @@ span{
 }
 
 span:hover{
-	color: red; 
     cursor: pointer;
 }
 
